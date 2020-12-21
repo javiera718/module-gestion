@@ -1,0 +1,59 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="roles_list">
+      <field name="name">Roles</field>
+      <field name="model">proyecto.roles</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="descripcion"/>
+          <field name="atributos"/>
+
+        </tree>
+      </field>
+    </record>
+
+     <record model="ir.ui.view" id="roles_form">
+      <field name="name">Roles</field>
+      <field name="model">proyecto.roles</field>
+      <field name="arch" type="xml">
+        <form>
+        <sheet>
+        <group>
+          <field name="name"/>
+          <field name="descripcion"/>
+          <field name="atributos"/>
+        </group>
+        <group>
+          <field name="rol_ids"/>
+        </group>
+
+            </sheet>
+
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="roles_action_window">
+      <field name="name">Roles </field>
+      <field name="res_model">proyecto.roles</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.server" id="roles_action_server">
+      <field name="name">gestionproyecto server</field>
+      <field name="model_id" ref="model_proyecto_general"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+
+    <menuitem name="Roles" id="gestionproyecto.menu_3" parent="gestionproyecto.menu_root" action="roles_action_window"/>
+
+
+    </data>
+</odoo>
