@@ -83,56 +83,11 @@
         }
       </field>
     </record>
-    <!-- Personas-->
-
-    <record model="ir.ui.view" id="personas_list">
-      <field name="name">gestionproyecto list</field>
-      <field name="model">proyecto.personas</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="apellidos"/>
-
-
-        </tree>
-      </field>
-    </record>
-    <record model="ir.ui.view" id="gestionproyecto.form">
-      <field name="name">gestionproyecto list</field>
-      <field name="model">proyecto.personas</field>
-      <field name="arch" type="xml">
-        <form>
-        <sheet>
-        <group>
-          <field name="name"/>
-          <field name="apellidos"/>
-        </group>
-        </sheet>
-        </form>
-      </field>
-    </record>
-    <record model="ir.actions.act_window" id="personas_action_window">
-      <field name="name">gestionproyecto window</field>
-      <field name="res_model">proyecto.personas</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-    <record model="ir.actions.server" id="gestionproyecto.action_server">
-      <field name="name">gestionproyecto server</field>
-      <field name="model_id" ref="model_proyecto_personas"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
-    </record>
+   
 
     <menuitem name="gestionproyecto" id="gestionproyecto.menu_root"/>
     <menuitem name="Proyectos" id="gestionproyecto.menu_1" parent="gestionproyecto.menu_root" action="gestionproyecto.action_window"/>
-    <menuitem name="Personas" id="gestionproyecto.menu_1_list" parent="gestionproyecto.menu_root"  action="personas_action_window"
-             />
+    
 
     </data>
 </odoo>
