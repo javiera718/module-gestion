@@ -34,11 +34,13 @@
       <field name="model">proyecto.miembros</field>
       <field name="arch" type="xml">
         <form>
+        
         <sheet>
+        <group>
           <field name="miembro_id"/>
 
           <field name="rol_id"/>
-
+        </group>
         </sheet>
         </form>
       </field>
