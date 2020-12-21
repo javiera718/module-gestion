@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cargo_proyecto,proyecto.general,model_proyecto_general,,1,1,1,1
+access_cargo_proyectos,proyecto.personas,model_proyecto_personas,,1,1,1,1
+access_cargo_proyectoa,proyecto.roles,model_proyecto_roles,,1,1,1,1
+access_cargo_proyectoz,proyecto.miembros,model_proyecto_miembros,,1,1,1,1
