@@ -4,16 +4,23 @@ from odoo import models, fields, api
 
 class persona(models.Model):
      _name ='proyecto.personas'
-     name= fields.Char(String="Nombre", required=True)
-     apellidos=fields.Char(String="Apellidos", required=True)
+     name= fields.Char(string="Nombre", required=True)
+     apellidos=fields.Char(string="Apellidos", required=True)
      encargado_ids=fields.One2many('proyecto.general', 'encargado_id')
      miembro_ids=fields.One2many('proyecto.miembros','miembro_id')
-     
+     especialidad_id = fields.Many2one('persona.especialidad', string="Especialidad")
+
      ##
 class rol(models.Model):
      _name = 'proyecto.roles'
-     name=fields.Char(String="Rol", required=True)
-     descripcion=fields.Char(String="Descripción")
-     atributos=fields.Char(String="Atributos")
+     name=fields.Char(string="Rol", required=True)
+     descripcion=fields.Char(string="Descripción")
+     atributos=fields.Char(string="Atributos")
      rol_ids= fields.One2many('proyecto.miembros', 'rol_id')
+     
+class especialidad(models.Model):
+     _name = 'persona.especialidad'
+     name= fields.Char(string="Especialidad", required=True)
+     descripcion=fields.Char()
+     especialidad_ids = fields.One2many('proyecto.personas', 'especialidad_id')
      

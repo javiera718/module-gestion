@@ -3,3 +3,5 @@ access_cargo_proyecto,proyecto.general,model_proyecto_general,,1,1,1,1
 access_cargo_proyectos,proyecto.personas,model_proyecto_personas,,1,1,1,1
 access_cargo_proyectoa,proyecto.roles,model_proyecto_roles,,1,1,1,1
 access_cargo_proyectoz,proyecto.miembros,model_proyecto_miembros,,1,1,1,1
+access_especialidades,persona.especialidad,model_persona_especialidad,,1,1,1,1
+

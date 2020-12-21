@@ -24,9 +24,7 @@
           <field name="descripcion"/>
           <field name="atributos"/>
         </group>
-        <group>
-          <field name="rol_ids"/>
-        </group>
+
 
             </sheet>
 

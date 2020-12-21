@@ -9,6 +9,8 @@
         <tree>
           <field name="name"/>
           <field name="apellidos"/>
+          <field name="especialidad_id"/>
+
 
 
         </tree>
@@ -23,6 +25,8 @@
         <group>
           <field name="name"/>
           <field name="apellidos"/>
+          <field name="especialidad_id"/>
+
         </group>
         </sheet>
         </form>
