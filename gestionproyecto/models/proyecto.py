@@ -28,7 +28,7 @@ class personas(models.Model):
      encargado_ids=fields.One2many('proyecto.general', 'encargado_id')
      miembro_ids=fields.One2many('proyecto.miembros','miembro_id')
      
-     
+     #
 class rol(models.Model):
      _name = 'proyecto.roles'
      name=fields.Char(String="Rol", required=True)
@@ -37,8 +37,8 @@ class rol(models.Model):
      
 class detalleMiembros(models.Model):
      _name ='proyecto.miembros'
-     miembros_id= fields.Many2one('proyecto.general', string="Miembro del equipo")
-     miembro_id= fields.Many2one('proyecto.personas', string="Miembro del equipo")
+     miembros_id= fields.Many2one('proyecto.general', string="Miembros del equipo")
+     miembro_id= fields.Many2one('proyecto.personas', string="Nombre")
 
      rol_id= fields.Many2one('proyecto.roles', string="Rol")
      

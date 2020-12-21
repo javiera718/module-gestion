@@ -13,6 +13,8 @@
         </tree>
       </field>
     </record>
+
+
     <record model="ir.ui.view" id="miembros_list">
       <field name="name">gestionproyecto list</field>
       <field name="model">proyecto.miembros</field>
@@ -39,6 +41,8 @@
 
         </form>
       </field>
+
+
     </record>
         
     <record model="ir.ui.view" id="gestionproyecto.form">
@@ -81,7 +85,7 @@
     </record>
     <!-- Personas-->
 
-    <record model="ir.ui.view" id="gestionproyecto.list">
+    <record model="ir.ui.view" id="personas_list">
       <field name="name">gestionproyecto list</field>
       <field name="model">proyecto.personas</field>
       <field name="arch" type="xml">
