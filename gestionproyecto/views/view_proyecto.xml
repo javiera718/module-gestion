@@ -1,7 +1,7 @@
 <odoo>
     <data>
     <record model="ir.ui.view" id="gestionproyecto.list">
-      <field name="name">gestionproyecto list</field>
+      <field name="name">Lista de proyectos</field>
       <field name="model">proyecto.general</field>
       <field name="arch" type="xml">
         <tree>
@@ -16,7 +16,7 @@
 
 
     <record model="ir.ui.view" id="miembros_list">
-      <field name="name">gestionproyecto list</field>
+      <field name="name">Personas</field>
       <field name="model">proyecto.miembros</field>
       <field name="arch" type="xml">
         <tree>
@@ -30,15 +30,16 @@
       </field>
     </record>
     <record model="ir.ui.view" id="miembros_form">
-      <field name="name">gestionproyecto list</field>
+      <field name="name">Formulario de miembro</field>
       <field name="model">proyecto.miembros</field>
       <field name="arch" type="xml">
         <form>
+        <sheet>
           <field name="miembro_id"/>
 
           <field name="rol_id"/>
 
-
+        </sheet>
         </form>
       </field>
 
@@ -46,7 +47,7 @@
     </record>
         
     <record model="ir.ui.view" id="gestionproyecto.form">
-      <field name="name">gestionproyecto list</field>
+      <field name="name">Formulario nuevo proyecto</field>
       <field name="model">proyecto.general</field>
       <field name="arch" type="xml">
         <form>
@@ -67,7 +68,7 @@
       </field>
     </record>
     <record model="ir.actions.act_window" id="gestionproyecto.action_window">
-      <field name="name">gestionproyecto window</field>
+      <field name="name">Proyectos </field>
       <field name="res_model">proyecto.general</field>
       <field name="view_mode">tree,form</field>
     </record>
@@ -85,7 +86,7 @@
     </record>
    
 
-    <menuitem name="gestionproyecto" id="gestionproyecto.menu_root"/>
+    <menuitem name="Gestión de proyectos" id="gestionproyecto.menu_root"/>
     <menuitem name="Proyectos" id="gestionproyecto.menu_1" parent="gestionproyecto.menu_root" action="gestionproyecto.action_window"/>
     
 

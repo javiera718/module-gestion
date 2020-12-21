@@ -3,7 +3,7 @@
      <!-- Personas-->
 
     <record model="ir.ui.view" id="personas_list">
-      <field name="name">gestionproyecto list</field>
+      <field name="name">Personas</field>
       <field name="model">proyecto.personas</field>
       <field name="arch" type="xml">
         <tree>
@@ -15,7 +15,7 @@
       </field>
     </record>
     <record model="ir.ui.view" id="gestionproyecto.form">
-      <field name="name">gestionproyecto list</field>
+      <field name="name">Personas</field>
       <field name="model">proyecto.personas</field>
       <field name="arch" type="xml">
         <form>
@@ -29,7 +29,7 @@
       </field>
     </record>
     <record model="ir.actions.act_window" id="personas_action_window">
-      <field name="name">gestionproyecto window</field>
+      <field name="name">Personas</field>
       <field name="res_model">proyecto.personas</field>
       <field name="view_mode">tree,form</field>
     </record>
