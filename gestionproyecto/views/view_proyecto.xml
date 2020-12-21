@@ -4,18 +4,18 @@
       <field name="name">Lista de proyectos</field>
       <field name="model">proyecto.general</field>
       <field name="arch" type="xml">
-        <tree>
+         <tree decoration-success="estado=='Activo'" decoration-danger="estado=='Inactivo'" decoration-warning="estado=='Pendiente'">
           <field name="name"/>
           <field name="encargado_id"/>
           <field name="fecha_inicio"/>
           <field name="fecha_termino"/>
-
-        </tree>
+          <field name="estado"/>
+         </tree>
       </field>
     </record>
 
 
-    <record model="ir.ui.view" id="miembros_list">
+  <record model="ir.ui.view" id="miembros_list">
       <field name="name">Personas</field>
       <field name="model">proyecto.miembros</field>
       <field name="arch" type="xml">

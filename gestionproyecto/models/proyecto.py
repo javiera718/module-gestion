@@ -10,7 +10,9 @@ class proyecto(models.Model):
      encargado_id = fields.Many2one('proyecto.personas', string="Encargado")
      fecha_inicio= fields.Date(string="Fecha de Inicio")
      fecha_termino=fields.Date(string="Fecha de termino")
-     
+     estado=fields.Selection([('Activo','Activo'),('Pendiente','Pendiente'),('Inactivo','Inactivo')])
+          
+          
      miembros_ids = fields.One2many('proyecto.miembros', 'miembros_id', string="Miembros del equipo")
 
      

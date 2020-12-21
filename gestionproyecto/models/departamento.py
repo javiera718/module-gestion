@@ -6,6 +6,6 @@ class departamento(models.Model):
      _name ='departamento.general'
      name= fields.Char(string="Nombre", required=True)
      direccion=fields.Char(string="Direccion", required=True)
-     email=fields.EmailField(string="Email", required=True)
-     celu = fields.telephoneField(string="Teléfono")
-    
+     email=fields.Char(string="Email", required=True)
+     celu = fields.Integer(string="Teléfono")
+     departamento_ids= fields.One2many('proyecto.personas', 'departamento_id')

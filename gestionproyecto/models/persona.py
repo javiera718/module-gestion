@@ -11,6 +11,9 @@ class persona(models.Model):
      miembro_ids=fields.One2many('proyecto.miembros','miembro_id')
      especialidad_id = fields.Many2one('persona.especialidad', string="Especialidad")
      departamento_id = fields.Many2one('departamento.general', string="Departamento")
+     rut= fields.Char(string="Rut", required=True, )
+     direccion=fields.Char(string="Dirección")
+     fecha_nac=fields.Date(string="Fecha de nacimiento")
 
      ##
 class rol(models.Model):
