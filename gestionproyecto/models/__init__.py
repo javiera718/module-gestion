@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import proyecto, persona
+from . import proyecto, persona, departamento

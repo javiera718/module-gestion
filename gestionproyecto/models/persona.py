@@ -10,6 +10,7 @@ class persona(models.Model):
      encargado_ids=fields.One2many('proyecto.general', 'encargado_id')
      miembro_ids=fields.One2many('proyecto.miembros','miembro_id')
      especialidad_id = fields.Many2one('persona.especialidad', string="Especialidad")
+     departamento_id = fields.Many2one('departamento.general', string="Departamento")
 
      ##
 class rol(models.Model):
