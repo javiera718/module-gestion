@@ -26,7 +26,8 @@
       'security/ir.model.access.csv',
         'views/view_proyecto.xml',
         'views/view_persona.xml',
-        'views/view_roles.xml'
+        'views/view_roles.xml',
+        'views/view_especialidad.xml'
         #'views/templates.xml',
     ],
     # only loaded in demonstration mode

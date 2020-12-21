@@ -6,6 +6,7 @@ class persona(models.Model):
      _name ='proyecto.personas'
      name= fields.Char(string="Nombre", required=True)
      apellidos=fields.Char(string="Apellidos", required=True)
+     fecha_ingreso=fields.Date(string="Fecha de ingreso", required=True)
      encargado_ids=fields.One2many('proyecto.general', 'encargado_id')
      miembro_ids=fields.One2many('proyecto.miembros','miembro_id')
      especialidad_id = fields.Many2one('persona.especialidad', string="Especialidad")
